@@ -9,6 +9,7 @@ metadata:
 spec:
   type: {{ .Values.frontend.service.type }}
   ports:
-  - port: {{ .Values.frontend.service.port }}
+  - name: http
+    port: {{ .Values.frontend.service.port }}
     targetPort: http
   selector: {{- include "frontend.labels.matchLabels" . | nindent 4 }}
