@@ -3,6 +3,44 @@ entries:
   dependency-track:
   - apiVersion: v2
     appVersion: 4.10.1
+    created: "2024-02-15T06:09:08.526892433Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: ~14.x
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: ~2.x
+    description: 'Dependency-Track is an intelligent Software Supply Chain Component
+      Analysis platform that allows organizations to identify and reduce risk from
+      the use of third-party and open source components. Dependency-Track takes a
+      unique and highly beneficial approach by leveraging the capabilities of Software
+      Bill-of-Materials (SBOM). This approach provides capabilities that traditional
+      Software Composition Analysis (SCA) solutions cannot achieve. '
+    digest: 171ab8205b82b958b4710aa79825d7bf1aa24a5d54de482cd0d3145ad2c5b93a
+    home: https://dependencytrack.org/
+    icon: https://avatars.githubusercontent.com/u/40258585
+    keywords:
+    - security
+    - dependency
+    - dependency-track
+    - OWASP
+    - Supply Chain Component Analysis
+    maintainers:
+    - email: david@davidkarlsen.com
+      name: davidkarlsen
+    - email: eth0linak@gmail.com
+      name: otterian
+    name: dependency-track
+    sources:
+    - https://docs.dependencytrack.org/
+    - https://github.com/evryfs/helm-charts
+    urls:
+    - https://github.com/nitschSB/evryfs-helm-charts/releases/download/dependency-track-1.6.2/dependency-track-1.6.2.tgz
+    version: 1.6.2
+  - apiVersion: v2
+    appVersion: 4.10.1
     created: "2024-01-30T14:59:33.853191155Z"
     dependencies:
     - condition: postgresql.enabled
@@ -39,4 +77,4 @@ entries:
     urls:
     - https://github.com/nitschSB/evryfs-helm-charts/releases/download/dependency-track-1.6.1/dependency-track-1.6.1.tgz
     version: 1.6.1
-generated: "2024-01-30T14:59:33.853201244Z"
+generated: "2024-02-15T06:09:08.526905207Z"
